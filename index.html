@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Александр - Контакты</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .container {
+        display: flex;
+        max-width: 1200px;
+        width: 100%;
+        gap: 3rem;
+        align-items: center;
+    }
+    
+    .left-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .right-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2.8rem;
+        color: #1a56db;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+    
+    p {
+        color: #555;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-link {
+        display: inline-flex;
+        align-items: center;
+        color: #1a56db;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    .contact-link:hover {
+        color: #0e40a1;
+        transform: translateX(3px);
+    }
+    
+    .contact-link span {
+        margin-right: 8px;
+        font-size: 1.4rem;
+    }
+    
+    .card {
+        background: white;
+        border-radius: 12px;
+        padding: 1.8rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        border: 1px solid #eee;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        border-color: #d0e0f5;
+    }
+    
+    .card h3 {
+        margin: 0 0 0.7rem;
+        color: #1a56db;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    
+    .card a {
+        color: #666;
+        text-decoration: none;
+        display: block;
+        font-size: 1.05rem;
+        transition: all 0.2s;
+        font-weight: 500;
+    }
+    
+    .card a:hover {
+        color: #1a56db;
+        text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .right-section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .card {
+            min-width: 200px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="left-section">
+<h1>Александр</h1>
+<p>Спасибо, что заинтересовались моим проектом! Здесь представлены способы со мной связаться</p>
+<a href="mailto:sapr03062010@mail.ru" class="contact-link">
+<span>✉</span>
+sapr03062010@mail.ru
+</a>
+</div>
+<div class="right-section">
+<div class="card">
+<h3>Telegram</h3>
+<a href="https://t.me/ikbeneenfleur">t.me/ikbeneenfleur</a>
+</div>
+<div class="card">
+<h3>VK</h3>
+<a href="https://vk.com/gladiolus_li8">vk.com/gladiolus_li8</a>
+</div>
+<div class="card">
+<h3>Gitverse</h3>
+<a href="https://gitverse.ru/gladiolus_li8/">gitverse.ru/gladiolus_li8</a>
+</div>
+</div>
+</div>
+</body>
+</html>
